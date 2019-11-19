@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@charset "UTF-8";
+h1 {
+  color: navy;
+  margin-left: 20px;
+  margin-top: 8%;
+}
+.img-h1{
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  margin: auto;
+}
+.img-cont{
+  width: 12vw;
+  margin: 20px 0 20px 0;
+}
+img{
+  width: 100%;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #bce3ec;
+  background-color: #59bbd5;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #bce3ec;
+  color: navy;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: whitesmoke;
+  color: navy;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+p{
+  width: 70vw;
+  margin: 10px auto;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
